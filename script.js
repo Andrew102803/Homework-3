@@ -34,14 +34,14 @@ generateBtn.addEventListener("click", writePassword);
 // Start Function
 function generatePassword() {
   // Ask four user Input
-  passwordLength = prompt("How many characters would you like your password? Choose between 8 and 128");
+  passwordLength = prompt("How many characters would you like your password? Choose between 8 and 100");
   console.log("Password length " + passwordLength);
   
   if(!passwordLength) {
     alert("Required value");
 
-  } else if (passwordLength < 8 || passwordLength > 128) {
-    passwordLength = prompt("You must choose between 8 and 128");
+  } else if (passwordLength < 8 || passwordLength > 100) {
+    passwordLength = prompt("You must choose between 8 and 100");
     console.log("Password length " + passwordLength);
   
   } else { 
